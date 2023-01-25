@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Flipkart Clone</title>
+    <!-- Favicon Icon -->
+    <link rel="icon" href="Images/flipkart-icon.svg">
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar_head flex" >
+            <div class="nav_container flex">
+                <!-- Logo  -->
+                <div class="logo flex">
+                    <a href="index.html" class="f_logo">
+                        <img src="Images/logo.png" title="Flipcart" alt="logo">
+                    </a>
+                    <a href="index.html" class="anchor plus">
+                        <span class="explore">Explore</span>
+                        <span class="plus_d">Plus<img src="Images/plus.png"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- Seachbar -->
+            <div class="searchBar_container">
+                <div class="search_bar">
+                    <form class="search flex">
+                        <input type="text" placeholder="Seach for products, brands and more" class="search_box">
+                        <button class="search_btn"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <!-- Login Button -->
+            <div class="login">
+                <a href="#" class="login_btn">Login</a>
+                <!-- Login Button Dropdown -->
+                <div class="login_dropdown none">
+                    <ul class="login_dropdown_list">
+                        <li class="login_dropdown_item signUp_li flex">
+                            <span class="new_user">New Customer?</span>
+                            <a href="#" class="sign_up">Sign Up</a>
+                        </li>
+                        <li class="login_dropdown_item"><i class="fa fa-solid fa-user"></i>My Profile</li>
+                        <li class="login_dropdown_item"><i class="fa fa-solid fa-plus"></i>Flipcart Plus Zone</li>
+                        <li class="login_dropdown_item"><i class="fa fa-solid fa-cart-arrow-down"></i>Orders</li>
+                        <li class="login_dropdown_item"><i class="fa fa-solid fa-heart"></i>Wishlist</li>
+                        <li class="login_dropdown_item"><i class="fa fa-solid fa-bars"></i>Rewards</li>
+                        <li class="login_dropdown_item"><i class="fa fa-solid fa-gift"></i>Gift Cards</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- More  -->
+            <div class="more">
+                <span class="more_d">More <i class="fa fa-angle-down"></i></span>
+                <!-- More Dropdown -->
+                <div class="more_dropdown none">
+                    <ul class="more_drop_list ">
+                        <li class="more_drop_item">
+                            <i class="fa fa-solid fa-bell"></i>
+                            Notification Preference
+                        </li>
+                        <li class="more_drop_item">
+                            <i class="fa fa-regular fa-circle-question"></i>
+                            24x7 Customer Care
+                        </li>
+                        <li class="more_drop_item">
+                            <i class="fa fa-solid fa-arrow-trend-up"></i>
+                            Advertise
+                        </li>
+                        <li class="more_drop_item">
+                            <i class="fa fa-solid fa-download"></i>
+                            Download App
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Cart -->
+            <div class="cart">
+                <span class="cart_d"><i class="fa-solid fa-cart-shopping"></i>Cart</span>
+            </div>
+        </nav>
+        <!-- Heading Categories -->
+        <div class="categories flex">
+            <ul class="category_list flex">
+                <li class="category_item">
+                    <img src="Images/Cat_Item1.webp" alt="Image" class="cat_img">
+                    <p class="cat_name">Top Offer</p> 
+                </li>
+                <li class="category_item">
+                    <img src="Images/Cat_Item2.webp" alt="Image" class="cat_img">
+                    <p class="cat_name">Mobile & Tablets</p> 
+                </li>
+                <li class="category_item">
+                    <img src="Images/Cat_Item3.webp" alt="Image" class="cat_img">
+                    <p class="cat_name">Electronics</p> 
+                </li>
+                <li class="category_item">
+                    <img src="Images/Cat_Item4.webp" alt="Image" class="cat_img">
+                    <p class="cat_name">TV & Appliances</p> 
+                </li>
+                <li class="category_item">
+                    <img src="Images/Cat_Item5.webp" alt="Image" class="cat_img">
+                    <p class="cat_name">Fashion</p> 
+                </li>
+                <li class="category_item">
+                    <img src="Images/Cat_Item6.webp" alt="Image" class="cat_img">
+                    <p class="cat_name">Beauty</p> 
+                </li>
+                <li class="category_item">
+                    <img src="Images/Cat_Item7.webp" alt="Image" class="cat_img">
+                    <p class="cat_name">Home & Furniture</p> 
+                </li>
+                <li class="category_item">
+                    <img src="Images/Cat_Item8.webp" alt="Image" class="cat_img">
+                    <p class="cat_name">Flights</p> 
+                </li>
+                <li class="category_item">
+                    <img src="Images/Cat_Item9.webp" alt="Image" class="cat_img">
+                    <p class="cat_name">Grocery</p> 
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="container_space">
+            <div class="card1">
+                <!-- Heading and Button of Section 1 -->
+                <div class="card1_title">
+                    <div class="card1_title_left">
+                        Deals of the Day
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="card1_title_right">
+                        <button>VIEW ALL</button>
+                    </div>
+                </div>
+                <!-- Products of Section 1 -->
+                <div class="row1">
+                    <div class="column1">
+                        <img src="Images/Product1.webp" alt="headphones">
+                        <h5>Gaming TWS</h5>
+                        <h4>From &#8377 899</h4>
+                        <h6>Shop Now</h6>
+                    </div>
+                    <div class="column1">
+                        <img src="Images/Product2.webp" alt="headphones">
+                        <h5>Gaming TWS</h5>
+                        <h4>From &#8377 899</h4>
+                        <h6>Shop Now</h6>
+                    </div>
+                    <div class="column1">
+                        <img src="Images/Product3.webp" alt="headphones">
+                        <h5>Gaming TWS</h5>
+                        <h4>From &#8377 899</h4>
+                        <h6>Shop Now</h6>
+                    </div>
+                    <div class="column1">
+                        <img src="Images/Product4.webp" alt="headphones">
+                        <h5>Gaming TWS</h5>
+                        <h4>From &#8377 899</h4>
+                        <h6>Shop Now</h6>
+                    </div>
+                    <div class="column1">
+                        <img src="Images/Product5.webp" alt="headphones">
+                        <h5>Gaming TWS</h5>
+                        <h4>From &#8377 899</h4>
+                        <h6>Shop Now</h6>
+                    </div>
+                    <div class="column1">
+                        <img src="Images/Product6.webp" alt="headphones">
+                        <h5>Gaming TWS</h5>
+                        <h4>From &#8377 899</h4>
+                        <h6>Shop Now</h6>
+                    </div>
+                    <div class="column1">
+                        <img src="Images/Product2.webp" alt="headphones">
+                        <h5>Gaming TWS</h5>
+                        <h4>From &#8377 899</h4>
+                        <h6>Shop Now</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Recommandetion / Advertisement -->
+            <div class="card2">
+                <div class="row2">
+                    <div class="column2">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/464/708/image/99e65e183146098c.jpeg?q=70" alt="recommed">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container_space">
+            <div class="card3">
+                <!-- Heading and Button of section 2 -->
+                <div class="card1_title">
+                    <div class="card1_title_left">
+                        Books and Music instrument
+                    </div>
+                    <div class="card1_title_right">
+                        <button>VIEW ALL</button>
+                    </div>
+                </div>
+                <!-- Products of section 2 -->
+                <div class="row1">
+                    <div class="column1">
+                        <img src="Images/Product6.webp" alt="headphones">
+                        <h5>Gaming TWS</h5>
+                        <h4>From &#8377 899</h4>
+                        <h6>Shop Now</h6>
+                    </div>
+                    <div class="column1">
+                        <img src="Images/Product4.webp" alt="headphones">
+                        <h5>Gaming TWS</h5>
+                        <h4>From &#8377 899</h4>
+                        <h6>Shop Now</h6>
+                    </div>
+                    <div class="column1">
+                        <img src="Images/Product5.webp" alt="headphones">
+                        <h5>Gaming TWS</h5>
+                        <h4>From &#8377 899</h4>
+                        <h6>Shop Now</h6>
+                    </div>
+                    <div class="column1">
+                        <img src="Images/Product2.webp" alt="headphones">
+                        <h5>Gaming TWS</h5>
+                        <h4>From &#8377 899</h4>
+                        <h6>Shop Now</h6>
+                    </div>
+                    <div class="column1">
+                        <img src="Images/Product5.webp" alt="headphones">
+                        <h5>Gaming TWS</h5>
+                        <h4>From &#8377 899</h4>
+                        <h6>Shop Now</h6>
+                    </div>
+                    <div class="column1">
+                        <img src="Images/Product1.webp" alt="headphones">
+                        <h5>Gaming TWS</h5>
+                        <h4>From &#8377 899</h4>
+                        <h6>Shop Now</h6>
+                    </div>
+                    <div class="column1">
+                        <img src="Images/Product3.webp" alt="headphones">
+                        <h5>Gaming TWS</h5>
+                        <h4>From &#8377 899</h4>
+                        <h6>Shop Now</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

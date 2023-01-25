@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    background-color: #f1f3f6;
+    color: #212121;
+}
+/* --------------- Navbar -------------------- */
+.navbar_head {
+    height: 55px;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: #2874f0;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex{
+    display:flex;
+}
+/* ------------ FLipcart Logo ------------ */
+.logo{
+    flex-direction: column;
+    width: fit-content;
+}
+
+.f_logo img{
+    position: relative;
+    padding-top: 5px;
+    width: 70px;
+    display: block;
+}
+
+.anchor{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;   
+    margin-top: -5px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.anchor:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.explore{
+    color: white;
+}
+
+.plus_d{
+    color:yellow;
+    margin: 0px -2px;
+    font-weight: bold;
+}
+
+.plus img{
+    width: 10px;
+}
+/* ------------ Searchbar ------------- */
+.searchBar_container{
+    margin: 0 10px;
+    padding: 0;
+    width: 600px;
+    min-width: 300px;
+}
+
+.search_bar{
+    max-width: 500px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.search{
+    border: 1px solid white;
+    border-radius: 2px 2px;
+}
+.search_box{
+    outline: none;
+    padding: 0 16px;
+    height: 35px;
+    border: 0;
+    width: 100%;
+}
+
+.search_btn{
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 4px 8px;
+    width: 40px;
+    height: 35px;
+    color: #2874f0;
+    font-size: 18px;
+}
+
+.fa{
+    margin: 0px 4px;
+}
+/* -------Login Button ---------- */
+.login{
+    position: relative;
+    left: 15px;
+}
+
+.login_btn{
+    color: #2874f0;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    height: 40px;
+    padding: 6px 40px;
+    margin: 0px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login_dropdown{
+    position: relative;
+    top: 15px;
+}
+
+.none{
+    display: none;
+}
+
+.login_dropdown_list{
+    padding: 0px 10px;
+    position: absolute;
+    list-style: none;
+    background-color: #fff;
+    width: max-content;
+    max-width: 250px;
+    box-shadow: 0 4px 16px 0 rgb(0 0 0 /20%);
+    transform: translate(-20px);
+}
+
+.login_dropdown_item{
+    padding: 14px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login_dropdown_item .fa{
+    margin-right: 7px;
+    color: #2874f0;
+}
+
+.signUp_li{
+    justify-content: space-between;
+}
+
+.new_user{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.sign_up{
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.login:hover .login_dropdown,
+.more:hover .more_dropdown{
+    display: block;
+}
+/* ----------More and Cart ---------- */
+.more, .cart{
+    position: relative;
+    left: 20PX;
+}
+
+.more_d, .cart_d{
+    color: white;
+    font-weight: 500;
+    margin: 0px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.more{
+    cursor: pointer;
+}
+
+.more_dropdown{
+    position: relative;
+    top: 15px;
+}
+
+.more_drop_list{
+    padding: 0 10px;
+    position: absolute;
+    list-style: none;
+    background-color: #fff;
+    width: max-content;
+    max-width: 250px;
+    box-shadow: 0 4px 16px 0 rgb(0 0 0 /20%);
+    transform: translate(-60px);
+}
+
+.more_drop_list .fa{
+    margin-right: 7px;
+    color: #2874f0;
+}
+
+.more_drop_item{
+    padding: 10px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+/* -------------------Categories------------------- */
+.categories{
+    background: #fff;
+    justify-content: center;
+    min-height: 80px;
+    border-bottom: 1px solid lightgray;
+}
+
+.category_list {
+    list-style: none;
+    max-width: 1280px;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0;
+}
+
+.category_item{
+    padding-top: 12px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cat_img{
+    height: 60px;
+    width: 60px;
+    margin-bottom: 3px;
+}
+
+.cat_name{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.category_item:hover{
+    color: #2874f0;
+}
+
+.category_item:first-child{
+    padding-left: 25px;
+}
+
+.category_item:last-child{
+    padding-right: 25px;
+}
+/* ---------------------Product Section 1 & 2------------------- */
+.container_space{
+    margin: 0 10%;
+}
+
+.card1{
+    float: left;
+    margin: 15px 0px 5px 0px;
+    max-height:360px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 1px rgb(177 174 174 /20%);
+    width: 85%;
+}
+
+.card1_title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px;
+    box-shadow: 0px 1px 1px 0px rgb(0 0 0 /20%);
+}
+
+.card1_title_left{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card1_title_right button{
+    padding: 7px 20px;
+    border-radius: 2px;
+    color: #fff;
+    background: #2874f0;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.row1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 280px;
+    margin: 10px 0px;
+}
+
+.column1{
+    text-align: center;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.column1 img{
+    padding-top: 15px;
+    height: 180px;
+    width: 120px;
+}
+
+.column1 img:hover{
+    transform: scale(1.05);
+}
+
+.column1 h4,h5,h6{
+    text-transform: capitalize;
+    cursor: pointer;
+    letter-spacing: normal;
+}
+
+.column1 h5{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.column1 h4{
+    color: green;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.column1 h6{
+    color: rgb(160, 160, 160);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card2{
+    position: relative;
+    float: right;
+    padding: 0px 0px;
+    margin: 15px 0px 5px 0px;
+    max-height: 360px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0px 0px 1px 1px rgb(177 174 174 /20%);
+    width: 14%;
+    cursor: pointer;
+}
+
+.row2 img{
+    /* position: relative; */
+    height: 350px;
+    width: 205px;
+    margin: 5px;
+}
+
+.card3{
+    float: left;
+    padding: 10px 0x;
+    margin: 10px 0px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 1px rgb(177 174 174 /20%);
+    width: 100%;
+}
