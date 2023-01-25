@@ -353,6 +353,7 @@ body{
     padding: 0px 0px;
     margin: 15px 0px 5px 0px;
     max-height: 360px;
+    max-width: 14%;
     border-radius: 2px;
     background: #fff;
     box-shadow: 0px 0px 1px 1px rgb(177 174 174 /20%);
@@ -360,10 +361,10 @@ body{
     cursor: pointer;
 }
 
-.row2 img{
-    /* position: relative; */
+.card2 img{
+    position: relative;
     height: 350px;
-    width: 205px;
+    width: 95%;
     margin: 5px;
 }
 
